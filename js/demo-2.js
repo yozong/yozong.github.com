@@ -50,7 +50,7 @@ var demo = (function(window, undefined) {
       variance: 1,
       stroke_width: 0.5,
       color_function : function(x, y) {
-        return '#7cc576';
+        return '#0f467e';
       }
     }).svg(); // Render as SVG.
 
