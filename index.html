@@ -1,54 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html>
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-<meta name="viewport" content="width=device-width, initial-scale=1"> 
-<title>关于_张yoyo</title>
-
-<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-<link rel="stylesheet" type="text/css" href="css/demo.css" />
-
-<!--必要样式-->
-<link rel="stylesheet" type="text/css" href="css/component.css" />
-
-<!--[if IE]>
-<script src="js/html5.js"></script>
-<![endif]-->
+<meta charset="utf-8" />
+<title></title>
+<link rel="stylesheet" href="css/com.css" />
+<link rel="stylesheet" href="css/key.css" />
+<meta name="viewport" content="width=640,user-scalable=no,target-densityDpi=device-dpi" />
 </head>
 <body>
-	
-	<div class="demo-1">
-	 	<div class="navi">
-            <ul class="bottom_menu comWidth">
-                <li class="ib" data-menuanchor="ideas">
-                    <a href="#ideas">个人简介</a>
-                </li>
-                <li class="ib right" data-menuanchor="teams">
-                    <a href="#teams">专业技能</a>
-                </li>
-                <li class="ib" data-menuanchor="joins">
-                    <a href="#joins">我的作品</a>
-                </li>
-                <li class="ib" data-menuanchor="desks">
-                    <a href="#desks">联系方式</a>
-                </li>
-            </ul>
-        </div>
-		<div class="content">
-			<div id="large-header" class="large-header">
-				<canvas id="demo-canvas"></canvas>
-				<!--<h1 class="main-title">Connect <span class="thin">Three</span></h1>-->
-			</div>
-		</div>
+<div id="header">
+	<img  src="img/logo.png"/>
+	<ul class="nav">
+		<li ><a href="">HOME</a></li>
+		<li><a href="work.html">MY WORKS</a></li>
+		<li><a href="work.html">ABOUT ME</a></li>
+	</ul>
+</div>
+<div>
+	<div id="center">
+		<img class="airship m_airship" src="img/fly.png">
+		<img id="world" class="world m_world" src="img/world.png"/>
+		<img id="person" class="person m_person" src="img/person.png">
+		<img id="ui" class="ui m_ui" src="img/ui.png"/>
+		<img id="san" class="san m_san" src="img/san.png"/>
+		<img id="mountain1" class="mountain1 m_mountain1" src="img/mountain1.png"  />
+		
 	</div>
-	
+
+		<img id="bg" class="bg m_bg" src="img/bg3.jpg"/>
+	<canvas id="stars"></canvas>
 
 
+</div>
+<script>
+var 
+w = window.innerWidth,
+h = window.innerHeight,
+oW=document.getElementById('world');
+oW.style.marginLeft=w/2-250+'px';
+oP=document.getElementById('person');
+oP.style.marginLeft=w/2-250+'px';
 
-	<script src="js/TweenLite.min.js"></script>
-	<script src="js/EasePack.min.js"></script>
-	<script src="js/rAF.js"></script>
-	<script src="js/demo-1.js"></script>
+
+</script>
+<script type="text/javascript" src="js/stars.js" ></script>
+<script type="text/javascript" src="js/lex.js" ></script>
 </body>
 </html>
