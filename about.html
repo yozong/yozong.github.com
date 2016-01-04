@@ -1,121 +1,32 @@
-@charset "utf-8";
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<link rel="stylesheet" href="css/com.css" />
+<link rel="stylesheet" href="css/key.css" />
+<meta name="viewport" content="width=640,user-scalable=no,target-densityDpi=device-dpi" />
+</head>
+<body>
+<div id="header">
+	<img  src="https://img.alicdn.com/imgextra/i4/684369603/TB2RZnViVXXXXa4XXXXXXXXXXXX_!!684369603.png"/>
+	<ul class="nav">
+		<li ><a href="http://yoyo.coding.io/">HOME</a></li>
+		<li><a href="work.html">MY WORKS</a></li>
+		<li><a href="about.html">ABOUT ME</a></li>
+	</ul>
+</div>
+<div class="me">
+	<img class="mepng" src="https://img.alicdn.com/imgextra/i4/684369603/TB2hK_RiVXXXXbhXXXXXXXXXXXX_!!684369603.png" />
+	<img class="tel" src="https://img.alicdn.com/imgextra/i4/684369603/TB26yrUiVXXXXa2XXXXXXXXXXXX_!!684369603.png"  />
 
-body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
-body{font-family: "microsoft yahei";}
-img{border:none;}
-ul,ol{list-style:none;}
-input,select,textarea{outline:none; border:none; background:#FFF;}
-textarea{resize:none;}
-a{text-decoration:none;}
-
-/*清浮动*/
-.clearfix:after{content:"";display:block;clear:both;}
-.clearfix{zoom:1;}
-/*通用样式*/
-.comWidth{width: 1200px; margin:0 auto; }
-.fl{float: left;}
-.fr{float: right;}
-
-body{
-height:100%
-}
-
-/*导航*/
-#header{width: 100%;height: 70px;background: white;position: fixed;	overflow: hidden;
-box-shadow: 0px 4px 5px #080a17;
--webkit-box-shadow: 0px 4px 5px #080a17;
--moz-box-shadow: 0px 4px 5px #080a17;
--ms-box-shadow: 0px 4px 5px #080a17;
-z-index: 9999;
-}
-#header img{width: 65px;height: 65px;margin-top: -2px;}
-.nav{float: right;margin-right: 80px;
--webkit-animation: 1s rotateInDownLeft;
--moz-animation: 1s rotateInDownLeft;
--ms-animation: 1s rotateInDownLeft;
--moz-animation: 1s rotateInDownLeft;
-animation: 1s rotateInDownLeft;
-z-index: 500;
-}
-.nav li{width: 120px;text-align: center;line-height: 60px;float: left;}
-.nav li a{color: #080A17;text-decoration: none;font-size: 16px;}
-#header img{margin: 4px 0 0 80px;}
-
-.nav li a:hover{bounce;color: #112a51;font-size: 18px;}
-
-#stars{width: 100%;height: 100%;
-  float: left;opacity: 1;margin: auto;z-index: -2;position: fixed;top: 0;
-
-}
-
-/*动画*/
-
-#center{position: relative;top: 150px;}
-
-.airship{
-	width: 300px;height: 304px;z-index: 110;position: absolute;margin-top: 80px;
-	left: 50%;
-}
-.m_airship{	-webkit-animation: 2s airship infinite linear;
-	-moz-animation: 2s airship infinite linear;
-	-ms-animation: 2s airship infinite linear;
-	-moz-animation: 2s airship infinite linear;
-	animation: 2s airship infinite linear;}
-
-.world{
-	width: 500px;height: 159px;z-index: 180;position: absolute;margin-top: 150px;left: 50%;margin-left: -250px;
-}
-
-#cri{
-	width: 607px;height: 483px;z-index: 180;position: fixed;top: 50%;margin-top: -200px;left: 50%;margin-left: -303px;
-}
-
-.m_world{-webkit-animation: 5s bounce;
-	-moz-animation: 5s bounce;
-	-ms-animation: 5s bounce;
-	-moz-animation: 5s bounce;
-	animation: 5s bounce;}
-
-.person{
-	width: 138px;height: 249px;z-index: 182;position: absolute;margin-top: 300px;left: 50%;margin-left: -280px;
-}
-.m_person{	-webkit-animation: 3s person infinite linear;
-	-moz-animation: 3s person infinite linear;
-	-ms-animation: 3s person infinite linear;
-	-moz-animation: 3s person infinite linear;
-	animation: 3s person infinite linear;}
-	
-.ui{
-	width: 132px;height: 86px;z-index: 118;position: absolute;margin-top: 450px;margin-left: 800px;
-}	
-	
-.san{
-	width: 1200px;height: 530px;z-index: 118;position: absolute;margin-top: 30px;
-}
-
-.mountain1{
-	width: 65px;height: 44px;z-index: 116;position: absolute;margin-top: 380px;left: 50%;margin-left: -370px;
-}	
-.bg{
-	width: 100%;height: 100%;z-index: 105;position: fixed;opacity: 0.5;
-}		
-	
-/*关于我*/	
+	<!--	<img id="bg" class="bg m_bg" src="img/bg3.jpg"/>-->
+	<canvas id="stars"></canvas>
 
 
+</div>
 
-.mepng{width: 200px;height: 273px;margin-top: 150px;position: fixed;left: 50%;margin-left: -100px;}	
-.tel{width: 630px;margin-top: 450px;position: fixed;left: 50%;margin-left: -315px;}		
-	
-	
-/*work*/		
-#more{width: 168px;height: 58px;position: absolute;left: 50%;margin-left: -84px;margin-top: -50px;margin-bottom: 20px;}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+<script type="text/javascript" src="js/stars.js" ></script>
+<script type="text/javascript" src="js/lex.js" ></script>
+</body>
+</html>
